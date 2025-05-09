@@ -13,6 +13,22 @@
             padding: 20px;
             line-height: 1.6;
             background-color: #f5f5f5;
+            text-align: justify;
+            transform: rotateY(180deg);
+            transform-origin: center;
+            direction: ltr; /* Maintain left-to-right text direction */
+        }
+
+        .book-container {
+            transform: rotateY(180deg);
+        }
+
+        .cover-image {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto 40px;
+            display: block;
+            border: 2px solid #333;
         }
 
         .header {
@@ -119,11 +135,11 @@
         <p>And their adventure was only beginning.</p>
     </div>
 
-    <h1 class="chapter-title">Chapter 1: The Enchanted Key</h1>
-    <div class="location">
-        <p>Current Location<br>
-        Universe: Stellaris (Starry)<br>
-        Place: Elysium, Planet Earth</p>
+    <h1 class="chapter-title">Chapter 1: The Enchanted Key</h1>   
+    <div class="header">
+        <h1>Current Location</h1>
+        <p>Universe: Stellaris (Starry)<br>
+           Place: Elysium, Planet Earth</p>
     </div>
 
     <p>Ryan crouched in the dim, golden light of his grandmother's attic...</p>
