@@ -2,84 +2,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>The Chosen: Rise of the Guardians</title>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4.1.0/turn.min.js"></script>
-  <style>
-    body {
-      background: url('cover.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: #fff;
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    #container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding-top: 30px;
-    }
-    #flipbook {
-      width: 95vw;
-      max-width: 960px;
-      height: 85vh;
-      box-shadow: 0 0 20px rgba(0,0,0,0.5);
-    }
-    .page {
-      background: rgba(0, 0, 0, 0.8);
-      padding: 30px;
-      font-size: 1.1rem;
-      line-height: 1.5;
-      overflow-y: auto;
-    }
-    .locked {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-    .locked h2 {
-      color: #f39c12;
-    }
-    #share {
-      margin-top: 10px;
-      text-align: center;
-    }
-    #share button {
-      background: #3498db;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      font-size: 1rem;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-    #qrcode {
-      margin-top: 10px;
-      text-align: center;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Chosen: Rise of the Guardians</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .decorative-border {
+            border: 2px solid #333;
+            padding: 10px;
+            margin: 20px 0;
+        }
+
+        .chapter-separator {
+            height: 2px;
+            background: #333;
+            margin: 30px 0;
+        }
+
+        .location {
+            text-align: center;
+            font-style: italic;
+            color: #666;
+            margin: 20px 0;
+        }
+
+        .dedication {
+            margin: 30px 0;
+            padding-left: 20px;
+            border-left: 3px solid #ccc;
+            color: #444;
+        }
+
+        .copyright {
+            font-size: 0.9em;
+            color: #666;
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+        }
+
+        h1, h2, h3 {
+            color: #2c3e50;
+            margin: 25px 0;
+        }
+
+        .chapter-title {
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .scene-break {
+            text-align: center;
+            margin: 25px 0;
+            font-weight: bold;
+            color: #666;
+        }
+    </style>
 </head>
 <body>
-  <div id="container">
-    <div id="flipbook">
-      <div class="page">
-        <img src="cover.jpg" alt="Book Cover" style="width:100%; height:auto;" />
-      </div>
-      <div class="page">
-        <h3>Dedication</h3>
-        <p>To God Almighty, for granting me the wisdom, strength, and time to bring this story to life.
-To my sons, Ryan and Shawn, whose boundless curiosity and spirit of adventure inspired this book and continue to guide my journey.
-</p>
-      </div>
-      <div class="page">
-        <h3>Prologue: In the Beginning</h3>
-        <p>In the beginning, El—the Light—created the multiverse.
+    <div class="header">
+        <h1>THE CHOSEN</h1>
+        <div class="chapter-separator"></div>
+        <h2>Rise of the Guardians</h2>
+        <h3>By G.G. Kairu</h3>
+    </div>
+
+    <div class="copyright">
+        <p>Published by G.G. Kairu, 2025.<br>
+        This is a fiction work. Similarities to real people, places, or events are entirely coincidental.<br>
+        The Chosen: Rise of the Guardians<br>
+        Copyright © 2025 G.G. Kairu.<br>
+        Written by G.G. Kairu.</p>
+    </div>
+
+    <div class="dedication">
+        <p>To God Almighty, the Author of all things seen and unseen, thank You for inspiration and strength.</p>
+        <p>To my sons, Ryan and Shawn---may you always be brave, curious, and true to your path. This world is yours to shape. And to every young dreamer turning these pages---you are The Chosen.</p>
+    </div>
+
+    <div class="epigraph">
+      <p>"The light shines in the darkness, and the darkness has not overcome it."<br>
+        <em>The Book of El*</em></p>
+    </div>
+
+    <h1 class="chapter-title">Prologue: In the Beginning</h1>
+    <p>In the beginning, El—the Light—created the multiverse.
 To safeguard this fragile equilibrium, El appointed five guardians—beings of unimaginable power and wisdom. Out of the five, four guardians were each entrusted with a relic, a crystalline vessel containing the essence of one element. Together, these relics held the fabric of the multiverse in place, allowing life to flourish in perfect balance.
 Due to his defiance, one was cast down from his lofty position, stripped of his radiant form, and left as a being of shadow. His beauty, wisdom and power were twisted, his essence shattered, leaving him a mere shadow of his former glory. He now prowls through the multiverse, seeking the relics that had been hidden away, knowing that only by possessing all four could he once again rise to challenge El and throw the multiverse into chaos.
 From the boundless void, He breathed life into the cosmos, shaping it with stars, worlds, galaxies, and countless realms. At the heart of all creation were the four elemental forces: fire, water, earth, and air. These primal elements sustained the balance of the multiverse, ensuring harmony in every corner of existence.
@@ -95,107 +117,19 @@ As they embarked on their journey, they quickly learned the weight of their task
 However, Ryan and Mia were chosen for a reason. They carried the Light within them—the Breath of El, power no darkness could extinguish. Together, they would face the trials of the elements, uncover the lost relics, and confront the Dark Mist himself. Their journey would take them across the multiverse, through realms of unimaginable beauty and terror, as they sought to restore the balance and push back the creeping shadow that sought to consume everything.
 The multiverse was teetering on the brink of destruction, and time was running out. The call had been made. The chosen had been found.
 And their adventure was only beginning.</p>
-      </div>
-      <div class="page">
-        <h3>Chapter 1: The Enchanted Key</h3>
-        <p> 
-                                                      Current Location
-                                                   
-                                                  Universe: Stellaris (Starry)
-                                                  Place: Elysium, Planet Earth
- 
-Ryan crouched in the dim, golden light of his grandmother’s attic. Dust particles danced lazily in the air, illuminated by the single beam of sunlight that streamed through a small circular window. The room smelled of aged wood and old leather, the kind of scent that felt heavy with stories long forgotten.
-His sharp, inquisitive eyes swept the cluttered space. Boxes and trunks were stacked haphazardly, their edges worn soft with age. Faded photographs in tarnished frames sat on shelves crowded with brittle    books, each object whispering of lives that had passed before his time.
-Ryan’s blonde hair, perpetually disheveled, caught the faint light as he shifted a stack of old newspapers. His solid frame—broad shoulders and muscular arms shaped by years of climbing cliffs and running along the rugged coastlines of Elysium—made moving the heavy objects look effortless. Yet, as much as his athletic build hinted at strength, it was his restless spirit and unyielding curiosity that truly defined him.
-Outside, the bustling coastal town of Elysium hummed with life. The rhythmic crash of waves against the cliffs blended with the distant laughter of children and the chatter of tourists exploring the sunlit streets below. But here in the attic, the world seemed to hold its breath, offering Ryan a sanctuary far removed from the noise and energy of daily life.
-He paused, wiping his hands on his jeans, and looked around the attic once more. His grandmother had asked him to organize the space, but for Ryan, this was never just a chore. It was a treasure hunt, each forgotten relic a potential key to a mystery waiting to be uncovered.
-It was then that his gaze landed on a chest tucked in the farthest corner of the room. Unlike the other trunks, its carved surface seemed to shimmer faintly, as though catching the light in ways it shouldn’t. The intricate patterns of vines and leaves etched into the wood appeared almost alive, twisting and writhing when viewed from the corner of his eye.
-Ryan tilted his head. “What’s your deal?” he muttered, stepping closer.
-The chest was old—far older than most of the items in the attic—but the craftsmanship was extraordinary. He traced the carvings with his fingers, feeling the grooves where the designs had been painstakingly etched into the wood.
-Taking a deep breath, he grasped the lid and lifted it. The hinges groaned in protest, the sound sharp and sudden in the quiet attic. A cloud of dust rose into the air, making him cough as he waved it away.
-Inside the chest were letters bound with brittle string, tarnished jewelry in faded velvet cases, and trinkets that glittered faintly in the dim light. But it was the small box nestled beneath the pile of letters that caught Ryan’s attention.
-The box was exquisite. Its dark wood gleamed with an almost unnatural luster, and the same vine-like patterns adorned its surface. What truly held Ryan’s gaze, however, was the faint glow emanating from within.
-Carefully, he lifted the box out of the chest and sat down cross-legged on the attic floor. His heart pounded as he studied the glowing object, his hands trembling slightly. It felt as though the box pulsed faintly in time with his heartbeat.
-“What are you?” Ryan whispered; his voice barely audible in the stillness.
-He opened the box slowly, the lid creaking as it revealed its contents. Nestled on a bed of soft velvet was a key.
-This wasn’t any ordinary key.
-The key shimmered with a strange, otherworldly light, its surface a mesmerizing blend of silver and deep blue. Symbols were etched into the metal—delicate, intricate designs that seemed to hum with energy. The patterns pulsed faintly, casting soft, eerie shadows on the attic walls.
-Ryan felt a vibration in the air, a subtle hum that seemed to come from the key itself. It was almost as if the key were alive, its presence filling the room with a quiet, unexplainable power.
-“This can’t be real,” Ryan muttered, but the weight of the key in his hand told him otherwise.
-“Ryan, dear, are you still up there?” His grandmother’s voice floated up from the kitchen below, breaking the spell.
-Ryan blinked; the key still clutched tightly in his hand. For a moment, he hesitated, torn between staying in the attic to marvel at his discovery and heading downstairs to share it.
-“Coming!” he called back, carefully placing the key back in its box and tucking it under his arm as he descended the creaking stairs.
-In the kitchen, Laura Collins stood by the sink, drying her hands with a dish towel. Her silver hair was pulled into a loose bun, and her petite frame carried an air of quiet strength. Her sharp eyes, however, were what Ryan noticed most—they always seemed to see more than she let on.
-“I found something in the attic,” Ryan said, setting the box on the kitchen table.
-Laura turned, her gaze falling on the box. For a fleeting moment, her expression changed—a flicker of recognition crossing her face before she masked it with a smile.
-“The attic always has surprises,” she said lightly, though there was a tension in her voice.
-Ryan hesitated, then opened the box to reveal the key. “Do you know what this is?”
-Laura’s hands stilled. Her eyes fixed on the glowing key, and for a moment, she did not speak.
-“Where did you find this?” she asked, her voice quieter now.
-“In the chest near the back,” Ryan said. “It feels... special.”
-Laura reached out as if to touch the key but stopped herself. Her expression tightened. “It’s beautiful,” she murmured, though her tone was distant.
-“You know what it is, don’t you?” Ryan pressed.
-Laura sighed, her shoulders sagging slightly. “Some things are better left in the past,” she said.
-Ryan frowned. “Is this about Dad?”
-Her gaze snapped to his, the mention of his father hanging heavily in the air.
-“Your father was a good man,” she said softly. “But there are questions I cannot answer, Ryan. Not yet.”
-“Not yet? Grandma, he disappeared when I was a baby. Don’t you think I deserve to know what happened to him?”
-Laura’s hands trembled as she picked up her teacup. “Some truths are too painful to face,” she said, her voice barely above a whisper.
-Ryan opened his mouth to argue but stopped at the look in her eyes. Whatever she knew, she wasn’t ready to share it.
-“Promise me you’ll be careful with this key,” she said finally. “Whatever it unlocks, it found its way to you for a reason. Just... don’t lose yourself in the search for answers.” 
-Ryan left the house with the key tucked securely in his jacket pocket, his mind racing. His grandmother’s reaction had only deepened the mystery. Whatever secrets she was hiding, he wasn’t going to find the answers here. But there was one person he could turn to.
-Mia.
-Ryan hurried through the rain-soaked streets of Elysium, the key pressing against his chest as though urging him forward. The storm clouds overhead seemed to mirror the turbulent thoughts swirling in his mind. His grandmother’s reaction had been cryptic at best, frustratingly evasive at worst. Whatever secrets she held, they only made him more determined to uncover the truth.
-Within minutes, he reached Mia’s house, a modest two-storied home nestled on a quiet street just beyond the bustling town center. The faint glow of a porch light illuminated the well-kept yard, where raindrops glistened on the bushes and flowerbeds. He stepped onto the porch, shaking water from his jacket before knocking.
-The door opened almost immediately, revealing Mia’s mother, Mrs. Carter. She was a warm, welcoming woman with kind eyes that crinkled when she smiled. Her short, tightly coiled hair framed her face neatly, and she wore a simple apron dusted with flour, evidence of her baking endeavors.
-“Ryan! What a surprise,” Mrs. Carter said, her voice full of affection. “Come in, come in—you’re soaked!”
-“Thanks, Mrs. Carter,” Ryan said, stepping inside and shrugging off his damp jacket. The smell of fresh cookies wafted through the air, and he couldn’t help but smile.
-“Mia’s in the dining room,” Mrs. Carter added as she closed the door behind him. “But I hope you’re not planning anything too wild today.”
-Ryan grinned. “No promises.”
-Mrs. Carter shook her head fondly. “You two,” she said with a chuckle before returning to the kitchen.
-Ryan made his way to the dining room, where Mia was seated at the table, her notebook open and several pens scattered around her. She glanced up as he entered, her deep brown eyes lighting up with curiosity when she saw the excitement on his face.
-Ryan pulled the glowing key from his jacket pocket, holding it carefully as though it might vanish. “This,” he said, setting the key gently on the table, “is what I found in my grandmother’s attic.”
-Mia leaned forward, her light brown complexion glowing under the warm light of the chandelier. Her dark hair, tied into two neat pigtails, framed her face, while a playful lock fell across her forehead. Her eyes sparkled with a quiet intensity that Ryan knew well—the look she got whenever she was faced with a puzzle to solve.
-Her gaze locked on the key, and she reached out hesitantly, her fingers hovering just above the glowing object. “Ryan,” she whispered, her voice tinged with awe, “this... this is incredible. Where did you say you found it?”
-“In my grandma’s attic,” Ryan said, sliding into the chair across from her. “It was in an old chest, hidden under a pile of letters and stuff. And it wasn’t just sitting there—it felt... alive. Even the symbols pulse; like they’re breathing or something...”
-Mia’s fingers traced the air above the key before she finally picked it up, cradling it in her hands like it was a fragile treasure. “It’s almost warm,” she noted, tilting it to catch the light. “And these symbols... they’re not random. This is something ancient.”
-Ryan nodded. “I thought the same thing. But what really got me was my grandma. She recognized it, Mia. I’m sure of it. But when I asked her about it, she just... shut down. Said some things are better left in the past.”
-Mia glanced up at him, her expression shifting to one of concern. “She didn’t give you anything? No hints? No explanation?”
-“Nothing,” Ryan replied, leaning back in his chair. “And when I asked if it had anything to do with my dad, she just avoided the question. I don’t know what to make of it, but I thought that if anyone could help me figure this out, it’d be you.”
-Mia leaned back in her chair, her fingers tapping the edge of the table. “If she knows what this is, she probably has her reasons for not saying anything. But that doesn’t mean we can’t figure it out ourselves.”
-Ryan grinned. “That’s what I was hoping you’d say.”
-Mia smiled faintly, setting the key back on the table. “Well, you were right about that. Let’s get to work.”
-Mia reached for her notebook, flipping to a blank page. “Let’s start with these symbols. They look like a language, but not one I’ve ever seen before.” She began sketching the patterns etched into the key, her pencil moving with practiced precision.
-Ryan leaned over to watch, his chin resting in his hand. “You think it’s some ancient code or something?”
-“Could be,” Mia replied, her voice thoughtful. “But there’s something about the way they’re arranged. They’re not just decorative. It’s almost like...” She trailed off, her eyes widening slightly.
-“Like what?” Ryan prompted.
-“Like they’re alive,” Mia said quietly, her gaze fixed on the key. “Look at the way they glow. It’s rhythmic, like a heartbeat.”
-Ryan nodded, his earlier excitement giving way to a sense of awe. “It felt alive when I touched it,” he admitted. “And the attic... it was like the whole room was humming when I opened the box.”
-Mia’s lips pressed into a thin line as she continued sketching. “This is no ordinary artifact. Whatever it is, it’s powerful.”
-The sound of footsteps interrupted their thoughts, and Mrs. Carter appeared in the doorway, a plate of cookies in her hands.
-“Thought you two might like a snack,” she said with a smile, setting the plate on the table. “You’ve been quiet in here—must be working on something serious.”
-Mia glanced at her mother, then back at Ryan. “You could say that,” she replied, her tone light.
-“Well, don’t forget to take a break,” Mrs. Carter said, giving them both a knowing look before heading back to the kitchen.
-Ryan reached for a cookie, biting into it absentmindedly as he studied the key. “You think we’ll find anything online about these symbols?”
-Mia shook her head. “Doubt it. If this thing is as ancient as it feels, it’s not going to show up on a search engine.”
-Ryan sighed, leaning back in his chair. “Then what do we do?”
-Mia tapped her pencil against her notebook, her eyes narrowing in thought. “First, we finish documenting these symbols. Then we go back to where you found it—the attic. There might be more clues there.”
-Ryan frowned. “You think I missed something?”
-“Not necessarily,” Mia said, shrugging. “But it’s better to be thorough. If there’s more to this, it’s worth checking every detail.”
-He nodded, a small smile tugging at his lips. “That’s why I came to you. You think of everything.”
-Mia rolled her eyes, though a faint smile crossed her face. “Let’s just hope we’re not getting ourselves into something we can’t handle.” 
-As they returned their focus to the key, the light above them flickered suddenly, plunging the room into brief darkness. The key’s glow intensified, casting eerie shadows on the walls.
-“Did you see that?” Ryan asked, his voice low.
-Mia nodded; her eyes fixed on the key. “It’s reacting to something,” she murmured.
-A low hum filled the air, almost imperceptible but unmistakable in the silence. The sound sent a shiver down Ryan’s spine.
-“We need to go,” he said abruptly, standing so quickly that his chair scraped loudly against the floor. “We need to figure out what this thing is and where it leads.”
-Mia stood as well; her expression determined. “The attic is our best shot for now. Let’s start there.”
-She grabbed her jacket, casting a quick glance at the window where rain streaked the glass. The storm outside had intensified, the once gentle rhythm of raindrops turning into a steady downpour. But neither of them seemed to care.
-Ryan tucked the key securely into his pocket, its warmth pulsing against his palm as though urging him forward. He didn’t know what lay ahead, but he felt it in his bones: this was only the beginning.
-Together, they stepped into the rain, the storm rumbling overhead as if heralding the adventure to come.</p>
-      </div>
-      <div class="page">
-        <p>He turned to call Mia, but she was already at his side, wide-eyed...</p>
+    <!-- Full prologue content here -->
+
+    <div class="scene-break">⚘ ⚘ ⚘</div>
+
+    <h1 class="chapter-title">Chapter 1: The Enchanted Key</h1>
+    <div class="location">
+        <p>Current Location<br>
+        Universe: Stellaris (Starry)<br>
+        Place: Elysium, Planet Earth</p>
+    </div>
+
+    <p>Ryan crouched in the dim, golden light of his grandmother's attic...</p>
+    <!-- Full chapter content here -->
       </div>
       <div class="page locked">
         <h2>Chapters Locked</h2>
