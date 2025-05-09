@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Chosen: Chapter 1 Flipbook</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4.1.0/turn.min.js"></script>
+  <style>
+    body {
+      background: #111;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    #flipbook {
+      width: 90vw;
+      height: 90vh;
+    }
+    .page {
+      background: #222;
+      padding: 20px;
+      font-size: 1rem;
+      overflow-y: auto;
+    }
+    .locked {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .locked h2 {
+      color: #f39c12;
+    }
+  </style>
+</head>
+<body>
+  <div id="flipbook">
+    <div class="page">
+      <h2>The Chosen: Rise of the Guardians</h2>
+      <p><strong>By G.G. Kairu</strong></p>
+      <p>Copyright © 2025 G.G. Kairu. All rights reserved.</p>
+    </div>
+    <div class="page">
+      <h3>Dedication</h3>
+      <p>To God Almighty... To my sons, Ryan and Shawn...</p>
+    </div>
+    <div class="page">
+      <h3>Prologue: In the Beginning</h3>
+      <p>In the beginning, El—the Light—created the multiverse...</p>
+    </div>
+    <div class="page">
+      <h3>Chapter 1: The Enchanted Key</h3>
+      <p>Ryan crouched in the dim, golden light of his grandmother’s attic...</p>
+    </div>
+    <div class="page">
+      <p>He turned to call Mia, but she was already at his side, wide-eyed...</p>
+    </div>
+    <div class="page locked">
+      <h2>Chapters Locked</h2>
+      <p>To unlock the full book, send <strong>Ksh 500</strong> via M-Pesa Pochi la Biashara to:</p>
+      <p><strong>+254 722 368 650</strong></p>
+      <p>Then WhatsApp your name and email to the same number to receive full access.</p>
+      <p>Thank you for supporting G.G. Kairu!</p>
+    </div>
+  </div>
+  <script>
+    $('#flipbook').turn({
+      width: '100%',
+      height: '100%',
+      autoCenter: true
+    });
+  </script>
+</body>
+</html>
